@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <title>saira</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-header">
+            <div class="nav-bg">
+                <div class="address">
+                    <div class="add-1">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        <p class="add-para">6A V. Lobanovsky Ave, office 145 </p>
+                    </div>
+                    <div class="add-2">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <p class="add-para">+12 345 550 87 15 </p>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                        id="bar-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                        <div class="nav-logo">
+                            <!-- <img src="t2logo.png.png" alt=""> -->
+                        </div>
+
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" id="navbarDropdown" href="#">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">About</a>
+                                        <a class="dropdown-item" href="#">career</a>
+                                        <a class="dropdown-item" href="#">career detail</a>
+                                        <a class="dropdown-item" href="#">Job apply</a>
+                                        <a class="dropdown-item" href="#">our team</a>
+                                        <a class="dropdown-item" href="#">team detail</a>
+                                        <a class="dropdown-item" href="#">contact us</a>
+                                        <a class="dropdown-item" href="#">testimonial</a>
+                                        <a class="dropdown-item" href="#">FAQs</a>
+                                        <a class="dropdown-item" href="#">404 error</a>
+                                        <a class="dropdown-item" href="#">landing</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown c-nav">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        service
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">our sevices</a>
+                                        <a class="dropdown-item" href="#">single service</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown c-nav">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Portfolio
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Portfolio grid</a>
+                                        <a class="dropdown-item" href="#">Portfolio mordern</a>
+                                        <a class="dropdown-item" href="#">Portfolio mansonry</a>
+                                        <a class="dropdown-item" href="#"> single Portfolio</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown c-nav">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">blog standard</a>
+                                        <a class="dropdown-item" href="#">blog grid</a>
+                                        <a class="dropdown-item" href="#">blog modern</a>
+                                        <a class="dropdown-item" href="#">single post</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown c-nav">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Shop
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">our product</a>
+                                        <a class="dropdown-item" href="#"> single product</a>
+                                        <a class="dropdown-item" href="#">cart</a>
+                                        <a class="dropdown-item" href="#">check out</a>
+                                        <a class="dropdown-item" href="#"> my account</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="nav-enun">
+                                <div class="en">EN</div>
+                                <div class="un">UN</div>
+                            </div>
+                            <div class="contact">
+                                <div class="c-content">
+                                    Contact us
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="nav-head2">
+                        <div class="card-content">
+                            <div class="head-text">
+                                <h1 class="t1"> Grow Busines<span class="s-design">s</h1>
+                                <h1 class="t1"></span> Revenue <span>Today</span></h1>
+                            </div>
+                            <div class="n-text">
+                                <p class="c-para">Our proven, technical SEO will drive more organic traffic to your
+                                    website and help
+                                    you consequently increase your sales.</p>
+                            </div>
+                            <div class="c-btn">
+                                <button class="b-vs">view service</button>
+                                <button class=" b-v">video</button>
+                            </div>
+                        </div>
+                        <div class="card-king">
+                            <div class="card-p"
+                                style="background-image: url('https://img.freepik.com/premium-photo/businessman-is-having-discussion-with-multicultural-associate-while-sitting-office-firm_232070-14559.jpg');">
+                            </div>
+                            <div class="card-p"
+                                style="background-image: url('https://img.freepik.com/premium-photo/business-people-leader-meeting-marketing-discussion-planning-idea-strategy-office-corporate-male-executive-talking-employee-staff-workshop-training-sales-workplace_590464-98183.jpg?w=2000');">
+                            </div>
+                            <div class="card-p"
+                                style="background-image: url('https://image.shutterstock.com/display_pic_with_logo/88580/88580,1277316928,1/stock-photo-group-discussion-on-a-business-meeting-in-a-modern-office-55855495.jpg');">
+                            </div>
+                            <div class="card-p"
+                                style="background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2631488.jpg'); ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="head-section">
+            <div class="card-sec">
+                <div class="card1">
+                    <div class="card-front">
+                        <i class="fa-solid fa-chart-pie" id="i"></i>
+                        <h2 style="margin-left: 30px; margin-top: 20px; ">Pie chart</h2>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="card-front">
+                        <i class="fa-solid fa-chart-line" id="i"></i>
+                        <h2 style="margin-left: 30px; margin-top: 20px; ">Strategy</h2>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="card-front">
+                        <i class="fa-solid fa-brain" id="i"></i>
+                        <h2 style="margin-left: 30px; margin-top: 20px; ">Analysis</h2>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="card-front">
+                        <i class="fa-solid fa-book" id="i"></i>
+                        <h2 style="margin-left: 30px; margin-top: 20px; ">Research</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-content">
+                <h4 class="sec-content-text1">We are saira</h4>
+                <h1 class="sec-content-text2">We want to give you the best <span class="sec-t1a"> service</span></h1>
+                <p class="sec-content-text3">Our team has deep expertise across all areas of digital. Need a deep dive
+                    on how to set up event
+                    tracking for a complex lead process? Want to optimize your sales pipeline. </p>
+            </div>
+            <div class="sec-small-card">
+                <div class="ssc-1">
+                    <div class="sec-icon">
+                        <i class="fa-solid fa-chess-rook"></i>
+                    </div>
+                    <p class="sec-para">Best Planning</p>
+                </div>
+                <div class="ssc-1">
+                    <div class="sec-icon">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
+                    <p class="sec-para">Money Back</p>
+                </div>
+                <div class="ssc-1">
+                    <div class="sec-icon">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <p class="sec-para">100% Trusted</p>
+                </div>
+            </div>
+            <div class="sec-load">
+                <div class="load1">
+                    <h4>Busiess Skill</h4>
+                    <progress id="file" value="80" max="100"> 32% </progress>
+                </div>
+                <div class="load2">
+                    <h4>Customer Service</h4>
+                    <progress id="file" value="60" max="100"> 32% </progress>
+                </div>
+            </div>
+            <div class="sec-side-card">
+                <div class="side-circle-card">
+
+                </div>
+            </div>
+            <div class="btn-team">
+                <button class="team-btn">Our team</button>
+            </div>
+            <div class="sec-side-card2"></div>
+            <div class="con">
+                <div class="call-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="text-number">
+                    <p class="ct">Call For Emergency</p>
+                    <h4 class="nt">(912) 345 6789</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="head-sec2">
+            <div class="c2">
+                <div class="cv">
+                    <video src="section-video1.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div class="head-sec3">
+            <div class="sec3-text">
+                <h5 class="sec3-t1">Team</h5>
+                <p class="sec3-t2">Our Expert <span class="sec3-s">Team</span></p>
+            </div>
+            <div class="content-para">
+                <p>Our team has deep expertise across all areas of digital. Need a deep dive on how to set up event
+                    tracking.</p>
+            </div>
+            <div class="head-sec3-card">
+                <div class="hs31">
+                    <div class="hs31a"
+                        style="background-image: url('https://demo.casethemes.net/saira/wp-content/uploads/2023/09/u-team6.jpg');">
+                    </div>
+                    <p class="hs3-t1">Founder</p>
+                </div>
+                <div class="hs31">
+                    <div class="hs31a" style="background-image: url('img6.jpg');"></div>
+                    <p class="hs3-t1">Co-founder</p>
+                </div>
+                <div class="hs31">
+                    <div class="hs31a" style="background-image: url('img7.jpg');"></div>
+                    <p class="hs3-t1">ceo</p>
+                </div>
+                <div class="hs31">
+                    <div class="hs31a" style="background-image: url('img8.jpg');"></div>
+                    <p class="hs3-t1">head manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="head-sec4">
+            <div class="head-sec4-1">
+                <p class="hs4t1">Case Studies</p>
+                <p class="hs4t2">We’re in the business of helping companies grow. Here is some of our work.</p>
+                <button class="hs4btn">CASE STUDIES</button>
+            </div>
+            <div class="head-sec4-2">
+                <div class="hs4-2c">
+                    <h2 class="hs4-t1">Marketing</h2>
+                    <h2 class="hs4-t1">Advisor</h2>
+                </div>
+            </div>
+        </div>
+        <div class="head-sec5">
+            <div class="rotate-flower">
+                <div class="flower"> </div>
+            </div>
+            <div class="hs5-t1">
+                <p class="hs5-t1a">Company Funfacts</p>
+                <p class="hs5-t1b">Helping families live intelligently means we’re always working to bring our customers
+                    the latest
+                    technology. As one of the premier providers of smart home technology, we are recognized throughout
+                    the industry for our products.</p>
+                <p></p>
+            </div>
+            <div class="hs5-card">
+                <div class="hs5-c1">
+                    <div class="c1-t1">
+                        <P class="text-s5">45k+</P>
+                    </div>
+                    <div class="c1-t2">
+                        <P class="text2-s5">Happy Clients</P>
+                    </div>
+                </div>
+                <div class="hs5-c1">
+                    <div class="c1-t1">
+                        <P class="text-s5">80%</P>
+                    </div>
+                    <div class="c1-t2">
+                        <P class="text2-s5">Increase in organic traffic</P>
+                    </div>
+                </div>
+                <div class="hs5-c1">
+                    <div class="c1-t1">
+                        <P class="text-s5">24</P>
+                    </div>
+                    <div class="c1-t2">
+                        <P class="text2-s5"> Awards</P>
+                    </div>
+                </div>
+                <div class="hs5-c1">
+                    <div class="c1-t1">
+                        <P class="text-s5">22+</P>
+                    </div>
+                    <div class="c1-t2">
+                        <P class="text2-s5">World wide branche</P>
+                    </div>
+                </div>
+                <div class="hs5-c2">
+                    <div class="c1-t1">
+                        <P class="text-s5">250+</P>
+                    </div>
+                    <div class="c1-t2">
+                        <P class="text2-s5">Active team members</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head-sec6">
+            <div class="hs6-profile">
+                <p class="hs6-t1">Best Service providing agency in town</p>
+                <p class="hs6-t2">We easily and quickly received the money from the consumers grow Sakira. After using
+                    our service, as well as communication.</p>
+                <div class="hs6-pf">
+                    <div class="hs6-pimg"></div>
+                    <div class="hs6-name">
+                        <p>Steve Behunin</p>
+                        <p>Senior Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hs6-img"> </div>
+        </div>
+        <div class="head-sec7">
+            <div class="hs7-box1">
+                <p class="hs7-b1-t1">Recently on our blog</p>
+                <p class="hs7-b1-t2">Are you curious about SEO of online stores or maybe you want to enter the market
+                    and wonder SEO abroad looks like? You will find answers to these questions and many other tips
+                    important for the development.</p>
+            </div>
+            <div class="hs7-box2">
+                <div class="hs7-box-child">
+                    <p class="hs7-box2-t1">Double Down on Marketing Spend? Think Again.</p>
+                    <div class="hs7-fore-child">
+                        <div class="hs7-b-schild">July 19, 2023</div>
+                        <div class="hs7-b-schild">Digital Products</div>
+                        <!-- <div class="hs7-arrow"></div> -->
+                    </div>
+                </div>
+                <div class="hs7-box-child">
+                    <p class="hs7-box2-t1">Double Down on Marketing Spend? Think Again.</p>
+                    <div class="hs7-fore-child">
+                        <div class="hs7-b-schild">July 19, 2023</div>
+                        <div class="hs7-b-schild">Digital Products</div>
+                        <!-- <div class="hs7-arrow"></div> -->
+                    </div>
+                </div>
+                <div class="hs7-box-child">
+                    <p class="hs7-box2-t1">Double Down on Marketing Spend? Think Again.</p>
+                    <div class="hs7-fore-child">
+                        <div class="hs7-b-schild">July 19, 2023</div>
+                        <div class="hs7-b-schild">Digital Products</div>
+                        <!-- <div class="hs7-arrow"></div> -->
+                    </div>
+                </div>
+                <div class="hs7-box-child">
+                    <p class="hs7-box2-t1">Double Down on Marketing Spend? Think Again.</p>
+                    <div class="hs7-fore-child">
+                        <div class="hs7-b-schild">July 19, 2023</div>
+                        <div class="hs7-b-schild">Digital Products</div>
+                        <!-- <div class="hs7-arrow"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="hs7-box3">
+                <div class="hs7-box-img"></div>
+            </div>
+            <div class="hs7-box4">
+                <p class="hs7-boxt1">Get in touch</p>
+                <div class="hs7-box4-link">
+                    <div class="hs7-b4-child linkdin">Linkdin</div>
+                    <div class="hs7-b4-child email">Email</div>
+                    <div class="hs7-b4-child phone">phone</div>
+                    <div class="hs7-b4-child insta">Instagram</div>
+                </div>
+            </div>
+        </div>
+        <div class="white-space"></div>
+
+        <div class="head-sec8">
+            <div class="sub-head-sec7">
+                <div class="hs8-box1"></div>
+                <div class="hs8-box2">
+                    <p class="hs8-text">Send message</p>
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="msg" type="text" placeholder="Your message">
+                    <button class="hs8-btn">Send Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-1">
+            <div class="f-1">
+                <!-- scrolling -->
+                <marquee behavior="right" direction="">
+                    <h1 class="f1-marquee"><img src="move-logo1.png" alt=""> Let's Talk <img src="move-logo2.png"
+                            alt="">
+                        Let's Talk <img src="move-logo3.png" alt=""> Let's Talk</h1>
+                </marquee>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="f-child">
+                <div class="ff-child"></div>
+            </div>
+            <div class="f-child1 ">
+                <div class="ff1-child">
+                    <div class="ff1a-child">
+                        <ul>
+                            <a>PORTFOLIO</a>
+                            <a>NEWS</a>
+                            <a>CAREER</a>
+                            <a>CONTACT</a>
+                        </ul>
+                    </div>
+                    <div class="ff1b-child">
+                        <ul>
+                            <a class="f-m">Privacy Policy</a>
+                            <a class="f-m">Cookies Policy</a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="f-child">
+                <div class="ff2-child">
+                    <div class="f-btn">
+                        <button class="f-btn1">LOGIN</button>
+                        <BUtton class="f-btn2">CREATE ACCOUNT</BUtton>
+                    </div>
+                    <div class="copy-r">
+                        <p class="f-copy">© Copyright. 2023 Sakira All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-3">
+            <p class="f-para"> MOHAMMAD MOFIK </p>
+        </div> -->
+    </footer>
+</body>
+
+</html>
